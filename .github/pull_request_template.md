@@ -1,15 +1,15 @@
-## Description
+## プルリクエストの要約
 
-* a simple description of what you're trying to accomplish
-* a summary of changes in code
-* which issues it fixes, if any
+* このプルリクエストがマージされることによって発生する効果の簡単な説明
+* どのようにコードを変更しましたか
+* 修正される問題がある場合、どの問題が修正されますか
 
-## Screenshots/videos:
+## スクリーンショットなど:
 
 
-## Checklist:
+## チェックリスト:
 
-- [ ] I have read [contributing wiki page]()
-- [ ] I have performed a self-review of my own code
-- [ ] My code follows the [style guidelines]()
-- [ ] My code passes [tests]()
+- [ ] 私はコントリビュートガイドを読みました [Contribution Guide](https://github.com/chromabox/testproj/blob/master/.github/CONTRIBUTING.md)
+- [ ] 自分のコードをセルフレビューしました
+- [ ] 私のコードはスタイルガイドラインに従っています
+- [ ] 私のコードはテストに合格します
