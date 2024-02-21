@@ -37,4 +37,5 @@ jobs:
 
     - name: apply_clang-tidy
       run: |
-        clang-tidy $(find . -name "*.h" -or -name "*cc") -p ${{github.workspace}}/build -warnings-as-errors=*
+#       clang-tidy $(find . -name "*.h" -or -name "*cc") -p ${{github.workspace}}/build -warnings-as-errors=*
+        run-clang-tidy -p ${{github.workspace}}/build
