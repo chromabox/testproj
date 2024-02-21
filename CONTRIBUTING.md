@@ -1,7 +1,0 @@
-# Contribution Guide
-
-## TESTEST
-
-これはコントリビュートガイドです
-
-

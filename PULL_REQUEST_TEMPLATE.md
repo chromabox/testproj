@@ -1,7 +1,0 @@
-# pull
-
-## TESTEST
-
-これはpullガイドです
-
-
