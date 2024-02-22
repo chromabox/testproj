@@ -4,8 +4,8 @@
 
 const char* kMessage = "Hello World!";
 
-int sub(char *buf)
+int sub(char *buf,size_t siz)
 {
-	memcpy(buf, kMessage, sizeof(kMessage));
+	memcpy(buf, kMessage, siz);
 	return 0;
 }

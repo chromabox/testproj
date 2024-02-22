@@ -1,16 +1,17 @@
 // this is no better code
+#include <stdio.h>
+#include <string.h>
+
+extern int sub(char *buf,size_t siz);
 
 // extern int sub(char *buf);
 int main(int argc, char **argv)
 {
-	const char *cpc;
 	char ppp[10];
 	int i;
-	const char *cpc2 = (const char*)cpc;
-	int b = argc;
-	sub(ppp);
+	sub(ppp,5);
 	for(i = 0 ; i < 5 ; i++) {
 		i++;
 	}
-	return b;
+	return 0;
 }
