@@ -33,8 +33,9 @@ jobs:
     - name: install tools
       run: |
         sudo apt update
-        sudo apt install clang-tidy
+        sudo apt install cpplint
 
-    - name: apply_clang-tidy
+    - name: cpplinter
       run: |
-        clang-tidy $(find . -name "*.h" -or -name "*cpp") -p ${{github.workspace}}/build --warnings-as-errors=*
+        cpplint --recursive ${{github.workspace}}/src
+
