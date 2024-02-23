@@ -8,35 +8,24 @@ assignees:
 body:
   - type: checkboxes
     attributes:
-      label: Is there an existing issue for this?
-      description: Please search to see if an issue already exists for the feature you want, and that it's not implemented in a recent build/commit.
+      label: 提案される機能リクエストに関する既存の提案は無いか確認しましたか？
+      description: 最近のビルド・コミットに実装されていないかも検索してください。
       options:
-        - label: I have searched the existing issues and checked the recent builds/commits
+        - label: 既存の提案を検索し、最近のビルド・コミットを確認しました
           required: true
   - type: markdown
     attributes:
       value: |
-        *Please fill this form with as much information as possible, provide screenshots and/or illustrations of the feature if possible*
+        *このフォームにできるだけ多くの情報を記入し、可能であれば機能のイラスト等も添えてください*
   - type: textarea
     id: feature
     attributes:
-      label: What would your feature do ?
-      description: Tell us about your feature in a very clear and simple way, and what problem it would solve
-    validations:
-      required: true
-  - type: textarea
-    id: workflow
-    attributes:
-      label: Proposed workflow
-      description: Please provide us with step by step information on how you'd like the feature to be accessed and used
-      value: |
-        1. Go to .... 
-        2. Press ....
-        3. ...
+      label: 提案された機能はどのような効果を及ぼし、改善が期待できそうですか
+      description: 提案された機能について非常に明確かつ簡単な方法で説明し、それによってどのような改善が期待できそうかを教えてください
     validations:
       required: true
   - type: textarea
     id: misc
     attributes:
-      label: Additional information
-      description: Add any other context or screenshots about the feature request here.
+      label: 追加情報
+      description: 機能リクエストに関するその他の情報やイラストなどがあればここに追加してください
