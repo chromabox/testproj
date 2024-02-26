@@ -2,6 +2,7 @@ name: CMake
 
 on:
   push:
+    tags: '*'
     branches: [ master ]
   pull_request:
     branches: [ master ]
@@ -18,8 +19,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout submodules
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2
       with:
         submodules: recursive
 
@@ -36,13 +36,13 @@ jobs:
       # Build your program with the given configuration
       run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
 
-    # clang-tidy
     - name: install tools
       run: |
         sudo apt update
         sudo apt install cpplint
 
     - name: cpplinter
+      # exec liner
       run: |
         cpplint --recursive ${{github.workspace}}/src
 
