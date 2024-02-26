@@ -1,8 +1,8 @@
 # testproj
 this is test project
 
-run code check sample
+run build and code check for githubAction sample
 ```
-$ sudo apt install cmake clang-tidy
+$ sudo apt install cmake cpplint
 $ ./code_check.sh
 ```
