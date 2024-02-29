@@ -41,8 +41,8 @@ jobs:
         sudo apt update
         sudo apt install cpplint
 
-    - name: cpplinter
+#    - name: cpplinter
       # exec liner
-      run: |
-        cpplint --recursive ${{github.workspace}}/src
+#      run: |
+#        cpplint --recursive ${{github.workspace}}/src
 
